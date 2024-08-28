@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy My Digital Planner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .price {
+            font-size: 24px;
+            color: #555;
+        }
+        .button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Digital Planner for Productivity</h1>
+        <p>Enhance your productivity with our customizable digital planner. Perfect for organizing your tasks and goals!</p>
+        <p class="price">$10.00</p>
+        <!-- PayPal Payment Button -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_xclick">
+            <input type="hidden" name="business" value="your-paypal-email@example.com">
+            <input type="hidden" name="item_name" value="Digital Planner">
+            <input type="hidden" name="amount" value="10.00">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="return" value="http://www.yoursite.com/thank_you.html">
+            <input type="hidden" name="cancel_return" value="http://www.yoursite.com/cancel.html">
+            <button type="submit" class="button">Buy Now</button>
+        </form>
+    </div>
+</body>
+</html>
